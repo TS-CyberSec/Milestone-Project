@@ -8,7 +8,6 @@ body {
   padding: 5px;
   text-align: center;
 }
-
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
@@ -56,7 +55,7 @@ body {
 /* Middle column */
 .column.middle {
   width: 50%;
-  height: 800px;
+  height: 500px;
 }
 
 /*Clear floats after the columns */
