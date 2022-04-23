@@ -63,13 +63,17 @@
                     <table border="0">
                       <h2>Please enter your grade for Freshmen courses</h2>
                         <tr><td><label for="Fresh">MATH 116 : Pre-Calculus Math I </label> </td></tr>
-                        <tr><td><input type="text" id="MATH_Grade" name="MATH_Grade" /><br /> </td></tr>
+                        <tr><td><input type="text" id="Grade1" name="Grade1" required /><br /> </td></tr>
                         <tr><td><label for="Fresh">CIS 105 : Principles of Computing </label> </td></tr>
-                        <tr><td><input type="text" id="CIS_Grade" name="CIS_Grade" /><br /> </td></tr>
+                        <tr><td><input type="text" id="Grade2" name="Grade2" required/><br /> </td></tr>
                         <tr><td><label for="Fresh">Math 213: Calculus I </label>  </td></tr>
-                        <tr><td><input type="text" id="Math2_Grade" name="Math2_Grade" /><br /> </td></tr>
+                        <tr><td><input type="text" id="Grade3" name="Grade3" required /><br /> </td></tr>
+                    
                     
                     </table>
+                    <br>
+                    <br>
+                    <button onclick="getReport()">Evaluate</button>
                 </center>
                 </div>
                 <div id="Sphomore_doc" style="display: none;">
@@ -77,12 +81,16 @@
                         <table border="0">
                           <h2>Please enter your grade for Sphomore courses</h2>
                           <tr><td><label for="Sphomore">MAIH 251: Pre-Calculus Math II</label> </td></tr>
-                          <tr><td><input type="text" id="MAIH2_Grade" name="MAIH2_Grade" /><br /> </td></tr>
+                          <tr><td><input type="text" id="Grade11" name="Grade11" /><br /> </td></tr>
                           <tr><td><label for="Sphomore"> CIS 121: Computer Science 1 </label> </td></tr>
-                          <tr><td><input type="text" id="CIS_Grade" name="CIS_Grade" /><br /> </td></tr>
+                          <tr><td><input type="text" id="Grade22" name="Grade22" /><br /> </td></tr>
                           <tr><td><label for="Sphomore">ECON241: Principles of Macroeconomics</label> </td></tr>
-                          <tr><td><input type="text" id="ECON241_Grade" name="ECON241_Grade" /><br /></td></tr>
+                          <tr><td><input type="text" id="Grade33" name="Grade33" /><br /></td></tr>
+                       
                     </table>
+                    <br>
+                    <br>
+                    <button onclick="getReport1()">Evaluate</button>
                 </center>
                 </div>
                 <div id="Jnior_doc" style="display: none;">
@@ -90,12 +98,16 @@
                         <table border="0">
                         <h2>Please enter your grade for Jnior courses</h2>
                         <tr><td><label for="Jnior">ACCT 408 Internal Auditing</label> </td></tr>
-                        <tr><td><input type="text" id="ACCT_Grade" name="ACCT_Grade" /><br /></td></tr>
+                        <tr><td><input type="text" id="Grade12" name="Grade12" /><br /></td></tr>
                         <tr><td><label for="Jnior">CIS 121: Computer Science I</label> </td></tr>
-                        <tr><td><input type="text" id="CIS_Grade" name="CIS_Grade" /><br /> </td></tr>
+                        <tr><td><input type="text" id="Grade22" name="Grade22" /><br /> </td></tr>
                         <tr><td><label for="Jnior">ENGL 222 World Literature</label> </td></tr>
-                        <tr><td><input type="text" id="ENGL_Grade" name="ENGL_Grade" /><br /></td></tr>
+                        <tr><td><input type="text" id="Grade32" name="Grade32" /><br /></td></tr>
+                    
                     </table>
+                    <br>
+                    <br>
+                    <button onclick="getReport2()">Evaluate</button>
                 </center>
                 </div>
 
@@ -104,88 +116,51 @@
                         <table border="0">
                         <h2>Please enter your grade for Senior courses</h2>
                         <tr><td><label for="Senior">MAIH 251: Pre-Calculus Math II</label> </td></tr>
-                        <tr><td><input type="text" id="MAIH25_Grade" name="MAIH25_Grade" /><br /></td></tr>
+                        <tr><td><input type="text" id="Grade13" name="Grade13" /><br /></td></tr>
                         <tr><td><label for="Senior">CCYBR 291 Research</label> </td></tr>
-                        <tr><td><input type="text" id="CCYBR_Grade" name="CCYBR_Grade" /><br /> </td></tr>
+                        <tr><td><input type="text" id="Grade23" name="Grade23" /><br /> </td></tr>
                         <tr><td><label for="Senior">IDES 240: Computer-Aided Design for Designers</label> </td></tr>
-                        <tr><td><input type="text" id="IDES_Grade" name="IDES_Grade" /><br /></td></tr>
+                        <tr><td><input type="text" id="Grade33" name="Grade33" /><br /></td></tr>
+
+                       
                     </table>
+                    <br>
+                    <br>
+                    <button onclick="getReport3()">Evaluate</button>
                 </center>
+                <!-- <button onclick="getReport1()">Evaluate</button> -->
                 </div>
+                <br>
+                <!-- <input type="button" value="Evaluate"> -->
+                <!-- <button onclick="getReport()">Evaluate</button> -->
+            </fieldset>
+
+            <h2>Evaluation Result</h2>
             
-                <!--  Name:<input type="text" id="txtName">   
-                Class:<input type="text" id="txtClass">
-                <br/><br/>
-                <table border="1">
-                    <tr><td>English</td><td><input type="text" id="txtEnglish"></td></tr>
-                    <tr><td>Kannada</td><td><input type="text" id="txtKannada"></td></tr>
-                    <tr><td>Maths</td><td><input type="text" id="txtMaths"></td></tr>
-                    <tr><td>Science</td><td><input type="text" id="txtScience"></td></tr>             
-                </table><br/><br/> -->
-                <!-- <input type="button" value="Get Result">
-            </fieldset> -->
-        
-            
-            <h2>Report Card</h2>
-            
-            <table border="1">
-                <tr><td>Name</td><td><input type="text" id="txtStudentName" readonly></td></tr>
-                <tr><td>Class</td><td><input type="text" id="txtStudentClass" readonly></td></tr>
+            <table border="0">
+                <!-- <tr><td>Name</td><td><input type="text" id="txtStudentName" readonly></td></tr>
+                <tr><td>Class</td><td><input type="text" id="txtStudentClass" readonly></td></tr> -->
                 <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
                 <tr><td>Average Marks</td><td><input type="text" id="txtAvgMarks" readonly></td></tr>
                 <tr><td>Grade</td><td><input type="text" id="txtGrade" readonly></td></tr>
                 <tr><td>Remarks</td><td><input type="text" id="txtResult" readonly></td></tr>
-            </table>
+            </table> 
 
+        </div>
 
-
-            <!-- <div class ="container mt -5">
-                <div class="row">
-                    <p>Studnets classification</p>
-                </div>
-                <div class ="col-md-3">
-                    <select name ="classification" id = "main_menu" class="Stu_select">
-                        <option value = "Freshmen">Freshmen</option>
-                        <option value="Sphomore">Sphomore</option>
-                        <option value="Jnior">Jnior</option>
-                        <option value="Senior">Senior</option>
-                    </select>
-                </div>
-            <div class="col-md-3">
-                <select name ="classification" id = "_menu" class="Stu_select">
-                    <option value = "Freshmen">Freshmen</option>
-                    <option value="Sphomore">Sphomore</option>
-                    <option value="Jnior">Jnior</option>
-                    <option value="Senior">Senior</option> -->
-
-            <!-- </div> -->
-            <!-- </div> -->
-
-    <!-- <ul>
-        <li>Please select your classification</li>
-        <li><select name="status">
-        <option value="-1" selected>select..</option>
-        <option value="Freshmen">Freshmen</option>
-        <option value="Sphomore">Sphomore</option>
-        <option value="Jnior">Jnior</option>
-        <option value="Senior">Senior</option>
-        </select></li>
-        
-    </ul> -->
- <!-- <a href="https://visit.kennesaw.edu/">Visit kennesaw.edu</a>
+ <a href="https://visit.kennesaw.edu/">Visit kennesaw.edu</a>
             <br>
             <p> Find your wings @ Kennesaw State University</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xmRmEi8nC4Y" frameborder="0" allowfullscreen></iframe>
         </iframe>
-    </div>  -->
-</div>
-</div>
+    <!-- </div>   -->
+<!-- </div> -->
+     </div>
 <div class="footer">
     <div class ="sidenav">
         <a href="https://kennesaw.view.usg.edu/d2l/home/2510919">CLASS PROJECT</a>
         <p>Copyright 2022 ©-All rights are reserved</p>
     </div>
   </div>
-
 </body>
 </html>
