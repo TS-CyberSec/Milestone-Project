@@ -19,30 +19,40 @@
 
 // })
 
-function main_menu(that) 
+
+
+function classification(that) 
 {
-    if (that.value == "Freshmen") 
+    if (that.value == "Fresh") 
     {
-        document.getElementById("adc").style.display = "block";
+        document.getElementById("Fresh_doc").style.display = "block";
     }
     else
     {
-        document.getElementById("adc").style.display = "none";
+        document.getElementById("Fresh_doc").style.display = "none";
     }
-    if (that.value == "pan")
+    if (that.value == "Sphomore")
     {
-        document.getElementById("pc").style.display = "block";
-    }
-    else
-    {
-        document.getElementById("pc").style.display = "none";
-    }
-    if (that.value == "pass")
-    {
-        document.getElementById("ps").style.display = "block";
+        document.getElementById("Sphomore_doc").style.display = "block";
     }
     else
     {
-        document.getElementById("ps").style.display = "none";
+        document.getElementById("Sphomore_doc").style.display = "none";
+    }
+    if (that.value == "Jnior")
+    {
+        document.getElementById("Jnior_doc").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("Jnior_doc").style.display = "none";
+    }
+    if (that.value == "Senior")
+    {
+        document.getElementById("Senior_doc").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("Senior_doc").style.display = "none";
     }
 }
