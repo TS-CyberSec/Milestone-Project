@@ -44,7 +44,57 @@
             <img src="Images/aboutksu-banner.jpg" width="500" height="100"></a>
             <h1>Student Form</h1>
 
-            <div class ="container mt -5">
+
+            <fieldset style="width:600px">
+                <legend><b>Student Input Section:</b></legend>
+
+                <select id ="classification" onchange = "main_menu(this);" >
+                    <option value="select">Select..</option>
+                    <option value = "Freshmen">Freshmen</option>
+                    <option value="Sphomore">Sphomore</option>
+                    <option value="Jnior">Jnior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+
+                <div id="adc" style="display: none;">
+                    <label for="Freshmen">Enter Aadhar Card No.</label> 
+                    <input type="text" id="Freshmen" name="Freshmen" /><br />
+                </div>
+                <div id="pc" style="display: none;">
+                    <label for="pan">Enter Pan Card No.</label> 
+                    <input type="text" id="pan" name="pan" /><br />
+                </div>
+                <div id="ps" style="display: none;">
+                    <label for="pass">Enter Passport No.</label> 
+                    <input type="text" id="pass" name="pass" /><br />
+                </div>
+            
+                <!--  Name:<input type="text" id="txtName">   
+                Class:<input type="text" id="txtClass">
+                <br/><br/>
+                <table border="1">
+                    <tr><td>English</td><td><input type="text" id="txtEnglish"></td></tr>
+                    <tr><td>Kannada</td><td><input type="text" id="txtKannada"></td></tr>
+                    <tr><td>Maths</td><td><input type="text" id="txtMaths"></td></tr>
+                    <tr><td>Science</td><td><input type="text" id="txtScience"></td></tr>             
+                </table><br/><br/> -->
+                <input type="button" value="Get Result">
+            </fieldset>
+            
+            <h2>Report Card</h2>
+            
+            <table border="1">
+                <tr><td>Name</td><td><input type="text" id="txtStudentName" readonly></td></tr>
+                <tr><td>Class</td><td><input type="text" id="txtStudentClass" readonly></td></tr>
+                <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
+                <tr><td>Average Marks</td><td><input type="text" id="txtAvgMarks" readonly></td></tr>
+                <tr><td>Grade</td><td><input type="text" id="txtGrade" readonly></td></tr>
+                <tr><td>Remarks</td><td><input type="text" id="txtResult" readonly></td></tr>
+            </table>
+
+
+
+            <!-- <div class ="container mt -5">
                 <div class="row">
                     <p>Studnets classification</p>
                 </div>
@@ -61,12 +111,12 @@
                     <option value = "Freshmen">Freshmen</option>
                     <option value="Sphomore">Sphomore</option>
                     <option value="Jnior">Jnior</option>
-                    <option value="Senior">Senior</option>
+                    <option value="Senior">Senior</option> -->
 
             </div>
-            </div>
+            <!-- </div> -->
 
-    <ul>
+    <!-- <ul>
         <li>Please select your classification</li>
         <li><select name="status">
         <option value="-1" selected>select..</option>
@@ -76,13 +126,13 @@
         <option value="Senior">Senior</option>
         </select></li>
         
-    </ul>
- <a href="https://visit.kennesaw.edu/">Visit kennesaw.edu</a>
+    </ul> -->
+ <!-- <a href="https://visit.kennesaw.edu/">Visit kennesaw.edu</a>
             <br>
             <p> Find your wings @ Kennesaw State University</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xmRmEi8nC4Y" frameborder="0" allowfullscreen></iframe>
         </iframe>
-    </div> 
+    </div>  -->
 </div>
 </div>
 <div class="footer">
