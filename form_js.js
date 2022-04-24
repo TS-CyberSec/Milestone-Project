@@ -31,15 +31,14 @@ function classification(that)
         document.getElementById("Senior_doc","Fresh_doc",'Sphomore_doc','Jnior_doc').style.display = "none";
     }
 }
-
+// refresh function which refresh all the page
 function refreshPage(){
-    //window.location.reload(1);
 setTimeout(function() {
     location.reload();
   }, 10000);
 }
 
-
+// fucntion of validating students grades for Freshman 
 function getReport(){
 
     var grade = "";  //declare a variable for grade
@@ -96,8 +95,7 @@ function getReport(){
 
             (averageMarks >= 80 && averageMarks <= 100) ? 1 : 
             (averageMarks >= 60 && averageMarks <= 80) ? 2 : 0
-            // (averageMarks >= 70 && averageMarks <= 80) ? 3 :
-        //     (averageMarks <= 60 ) ? 3 : 0 
+
            )
             
             {
@@ -110,15 +108,13 @@ function getReport(){
             
         
     //display the results   
-    // document.getElementById('txtStudentName').value = document.getElementById('txtName').value;
-    // document.getElementById('txtStudentClass').value = document.getElementById('txtClass').value;
     document.getElementById('txtTotalMarks').value = totalMarks;
     document.getElementById('txtAvgMarks').value = averageMarks;
     document.getElementById('txtGrade').value = grade;
     document.getElementById('txtResult').value = result;
 
 }
-
+// fucntion of validating students grades for Sphomore   
 function getReport1(){
 
     var grade = "";  //declare a variable for grade
@@ -175,29 +171,26 @@ function getReport1(){
 
             (averageMarks >= 80 && averageMarks <= 100) ? 1 : 
             (averageMarks >= 60 && averageMarks <= 80) ? 2 : 0
-            // (averageMarks >= 70 && averageMarks <= 80) ? 3 :
-        //     (averageMarks <= 60 ) ? 3 : 0 
+
            )
             
             {
                 case 1 :grade = "A";result="Congratulations, Eligible";break;
                 case 2 :grade = "B"; result="Try next semester";break;
-                // case 3 :grade = "C"; result="Third Class";break;
-                // case 4 :grade = "D"; result="You are not qualified to apply";break;
+
                 case 0 :grade = "F"; result="Not Eligible";break;
             }
             
         
     //display the results   
-    document.getElementById('txtStudentName').value = document.getElementById('txtName').value;
-    document.getElementById('txtStudentClass').value = document.getElementById('txtClass').value;
+
     document.getElementById('txtTotalMarks').value = totalMarks;
     document.getElementById('txtAvgMarks').value = averageMarks;
     document.getElementById('txtGrade').value = grade;
     document.getElementById('txtResult').value = result;
 
 }
-
+// fucntion of validating students grades for Juniors   
 function getReport2(){
 
     var grade = "";  //declare a variable for grade
@@ -261,22 +254,18 @@ function getReport2(){
             {
                 case 1 :grade = "A";result="cCongratulations, Eligible";break;
                 case 2 :grade = "B"; result="Try next semester";break;
-                // case 3 :grade = "C"; result="Third Class";break;
-                // case 4 :grade = "D"; result="You are not qualified to apply";break;
                 case 0 :grade = "F"; result="Not Eligible";break;
             }
             
         
     //display the results   
-    // document.getElementById('txtStudentName').value = document.getElementById('txtName').value;
-    // document.getElementById('txtStudentClass').value = document.getElementById('txtClass').value;
     document.getElementById('txtTotalMarks').value = totalMarks;
     document.getElementById('txtAvgMarks').value = averageMarks;
     document.getElementById('txtGrade').value = grade;
     document.getElementById('txtResult').value = result;
 
 }
-
+// fucntion of validating students grades for Senior    
 function getReport3(){
 
     var grade = "";  //declare a variable for grade
@@ -333,22 +322,18 @@ function getReport3(){
 
             (averageMarks >= 80 && averageMarks <= 100) ? 1 : 
             (averageMarks >= 60 && averageMarks <= 80) ? 2 : 0
-            // (averageMarks >= 70 && averageMarks <= 80) ? 3 :
-        //     (averageMarks <= 60 ) ? 3 : 0 
+       
            )
             
             {
                 case 1 :grade = "A";result="Congratulations, Eligible";break;
                 case 2 :grade = "B"; result="Try next semester";break;
-                // case 3 :grade = "C"; result="Third Class";break;
-                // case 4 :grade = "D"; result="You are not qualified to apply";break;
                 case 0 :grade = "F"; result="Not Eligible to apply";break;
             }
             
         
     //display the results   
-    // document.getElementById('txtStudentName').value = document.getElementById('txtName').value;
-    // document.getElementById('txtStudentClass').value = document.getElementById('txtClass').value;
+
     document.getElementById('txtTotalMarks').value = totalMarks;
     document.getElementById('txtAvgMarks').value = averageMarks;
     document.getElementById('txtGrade').value = grade;
