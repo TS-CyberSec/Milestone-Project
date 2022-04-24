@@ -2,6 +2,7 @@ function classification(that)
 {
     if (that.value == "Fresh") 
     {
+        
         document.getElementById("Fresh_doc").style.display = "block";
 
     }
@@ -11,10 +12,11 @@ function classification(that)
     // }
     else if (that.value == "Sphomore")
     {
+        
         document.getElementById("Sphomore_doc").style.display = "block";
         
-        document.getElementById('Fresh_doc').onchange = function() {
-            alert(this.value);}
+        // document.getElementById('Fresh_doc').onchange = function() {
+        //     alert(this.value);}
     }
     // else
     // {
@@ -22,6 +24,7 @@ function classification(that)
     // }
    else if (that.value == "Jnior")
     {
+       
         document.getElementById("Jnior_doc").style.display = "block";
     }
     // else
@@ -30,13 +33,23 @@ function classification(that)
     // }
     else if (that.value == "Senior")
     {
+        
         document.getElementById("Senior_doc").style.display = "block";
     }
     else
     {
+        
         document.getElementById("Senior_doc","Fresh_doc",'Sphomore_doc','Jnior_doc').style.display = "none";
     }
 }
+
+function refreshPage(){
+    //window.location.reload(1);
+setTimeout(function() {
+    location.reload();
+  }, 10000);
+}
+
 
 function getReport(){
 
@@ -44,7 +57,7 @@ function getReport(){
     var  result="";  //declare a variable for result
 
     //read the marks
-    var Grade1 = document.getElementById('Grade11').value;
+    var Grade1 = document.getElementById('Grade1').value;
         if(Grade1 == 'A')
             Grade1 = 90;
         else if(Grade1 =='B')
@@ -55,7 +68,7 @@ function getReport(){
         Grade1 = 60;
         else
             Grade1 = 50
-    var Grade2 = document.getElementById('Grade22').value;
+    var Grade2 = document.getElementById('Grade2').value;
         if(Grade2 == 'A')
             Grade2 = 90;
         else if(Grade2 =='B')
@@ -66,7 +79,7 @@ function getReport(){
         Grade2 = 60;
         else
             Grade2 = 50
-    var Grade3 = document.getElementById('Grade33').value;
+    var Grade3 = document.getElementById('Grade3').value;
 
         if(Grade3 == 'A')
             Grade3 = 90;
