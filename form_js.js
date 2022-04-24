@@ -191,17 +191,17 @@ function getReport1(){
            )
             
             {
-                case 1 :grade = "A";result="congratulations you're qualified to appl";break;
-                case 2 :grade = "B"; result="Please the application next semister";break;
+                case 1 :grade = "A";result="Congratulations, Eligable";break;
+                case 2 :grade = "B"; result="Try next semister";break;
                 // case 3 :grade = "C"; result="Third Class";break;
                 // case 4 :grade = "D"; result="You are not qualified to apply";break;
-                case 0 :grade = "F"; result="You are not Eligable to apply";break;
+                case 0 :grade = "F"; result="Not Eligable to apply";break;
             }
             
         
     //display the results   
-    // document.getElementById('txtStudentName').value = document.getElementById('txtName').value;
-    // document.getElementById('txtStudentClass').value = document.getElementById('txtClass').value;
+    document.getElementById('txtStudentName').value = document.getElementById('txtName').value;
+    document.getElementById('txtStudentClass').value = document.getElementById('txtClass').value;
     document.getElementById('txtTotalMarks').value = totalMarks;
     document.getElementById('txtAvgMarks').value = averageMarks;
     document.getElementById('txtGrade').value = grade;
